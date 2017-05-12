@@ -14,7 +14,7 @@ subpackages = [x.replace('/', '.') for x in glob.glob('arrow/commands/*') if not
 setup(
     name="apollo",
     version='3.0',
-    description="WebApollo API library",
+    description="Apollo API library",
     long_description=readme,
     author="E Rasche",
     author_email="hxr@hx42.org",

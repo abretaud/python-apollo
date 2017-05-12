@@ -9,15 +9,15 @@ Apollo API Library
     :alt: Documentation Status
 
 Apollo is a Python library for interacting with
-`WebApollo <https://github.com/gmod/apollo/>`__
+`Apollo <https://github.com/gmod/apollo/>`__
 
 Examples
 --------
 
 .. code:: python
 
-    from apollo import WebApolloInstance
-    wa = WebApolloInstance('https://fqdn/apollo', 'jane.doe@fqdn.edu', 'password')
+    from apollo import ApolloInstance
+    wa = ApolloInstance('https://fqdn/apollo', 'jane.doe@fqdn.edu', 'password')
 
     orgs = wa.organisms.add_organism(
         "Yeast",
@@ -27,7 +27,7 @@ Examples
         public=False
     )
 
-    # Give webapollo a second to process the uploaded organism.
+    # Give Apollo a second to process the uploaded organism.
     time.sleep(1)
 
     # Then add yourself to permission list

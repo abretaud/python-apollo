@@ -10,8 +10,8 @@ class Client(object):
     """
     CLIENT_BASE = '/'
 
-    def __init__(self, webapolloinstance, **requestArgs):
-        self._wa = webapolloinstance
+    def __init__(self, apolloinstance, **requestArgs):
+        self._wa = apolloinstance
 
         self.__verify = requestArgs.get('verify', True)
         self._request_args = requestArgs
